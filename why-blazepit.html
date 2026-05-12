@@ -1,0 +1,359 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlazePit — 10 Reasons to Upgrade Your Grill Game</title>
+  <meta name="description" content="10 reasons BlazePit is the best portable grill for Egypt's outdoor culture.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&family=Stardos+Stencil:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/dark-light.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="main-nav">
+    <div class="nav__inner">
+      <a href="index.html" class="site-logo"><img src="assets/logo-dark.png" alt="BlazePit" class="nav-logo nav-logo--dark"><img src="assets/logo-light.png" alt="BlazePit" class="nav-logo nav-logo--light"></a>
+      <nav class="nav__links">
+        <a href="index.html"        class="nav__link" data-i18n="nav_home">Home</a>
+        <a href="how-it-works.html" class="nav__link" data-i18n="nav_how">How It Works</a>
+        <a href="why-blazepit.html" class="nav__link active" data-i18n="nav_why">Why BlazePit</a>
+        <a href="about.html"        class="nav__link" data-i18n="nav_about">About</a>
+        <a href="shop.html"         class="nav__link" data-i18n="nav_shop">Shop</a>
+      </nav>
+      <div class="nav__right">
+        <div class="lang-switcher">
+          <button class="lang-btn" aria-label="Language">
+            <span class="globe-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+            <span class="lang-current">EN</span>
+          </button>
+          <div class="lang-dropdown">
+            <button class="lang-option" data-lang="en">English</button>
+            <button class="lang-option" data-lang="ar">العربية</button>
+            <button class="lang-option" data-lang="es">Español</button>
+          </div>
+        </div>
+        <button class="theme-btn" aria-label="Toggle theme">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+        <a href="shop.html" class="btn btn-primary nav__cta" data-i18n="buy_now">Buy Now</a>
+      </div>
+      <button class="nav__hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile-overlay">
+    <a href="index.html"        class="nav__mobile-link" data-i18n="nav_home">Home</a>
+    <a href="how-it-works.html" class="nav__mobile-link" data-i18n="nav_how">How It Works</a>
+    <a href="why-blazepit.html" class="nav__mobile-link" data-i18n="nav_why">Why BlazePit</a>
+    <a href="about.html"        class="nav__mobile-link" data-i18n="nav_about">About</a>
+    <a href="shop.html"         class="nav__mobile-link" data-i18n="nav_shop">Shop</a>
+    <a href="contact.html"      class="nav__mobile-link" data-i18n="nav_contact">Contact</a>
+    <div class="nav__mobile-controls">
+      <div class="lang-switcher">
+        <button class="lang-btn">
+          <span class="globe-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+          <span class="lang-current">EN</span>
+        </button>
+        <div class="lang-dropdown">
+          <button class="lang-option" data-lang="en">English</button>
+          <button class="lang-option" data-lang="ar">العربية</button>
+          <button class="lang-option" data-lang="es">Español</button>
+        </div>
+      </div>
+      <button class="theme-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+    </div>
+  </div>
+
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="page-hero__content">
+      <span class="label fade-up" data-i18n="why_hero_label">Why Choose Us</span>
+      <h1 class="hero-text-reveal" data-i18n="why_hero_title">10 REASONS TO UPGRADE YOUR GRILL GAME</h1>
+      <p class="fade-up" data-delay="1" data-i18n="why_hero_sub">A portable charcoal grill built for real BBQ — at home or on the road.</p>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <div class="trust-strip">
+    <div class="trust-strip__track">
+      <div class="trust-strip__item"><span class="ts-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></span><span data-i18n="trust_1">Flat-Pack Design</span></div>
+      <div class="trust-strip__item"><span class="ts-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9z"/></svg></span><span data-i18n="trust_2">Sets Up in 5 Minutes</span></div>
+      <div class="trust-strip__item"><span class="ts-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg></span><span data-i18n="trust_3">Go Anywhere</span></div>
+      <div class="trust-strip__item"><span class="ts-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span><span data-i18n="trust_4">Built to Last</span></div>
+      <div class="trust-strip__item"><span class="ts-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></span><span data-i18n="trust_1">Flat-Pack Design</span></div>
+      <div class="trust-strip__item"><span class="ts-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9z"/></svg></span><span data-i18n="trust_2">Sets Up in 5 Minutes</span></div>
+      <div class="trust-strip__item"><span class="ts-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg></span><span data-i18n="trust_3">Go Anywhere</span></div>
+      <div class="trust-strip__item"><span class="ts-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span><span data-i18n="trust_4">Built to Last</span></div>
+    </div>
+  </div>
+
+
+  <!-- 10 REASONS -->
+  <section class="section reasons-section">
+    <div class="container">
+
+      <div class="reason-row reveal">
+        <div class="reason-number">01</div>
+        <div class="reason-content">
+          <h3 data-i18n="r1_title">Built for Egypt's Outdoor Culture</h3>
+          <p data-i18n="r1_desc">Designed around North Coast trips, Sinai camping, rooftop gatherings, and everything in between. BlazePit isn't a foreign product adapted for Egypt — it was built from the ground up for Egyptian outdoor culture.</p>
+        </div>
+      </div>
+
+      <div class="reason-row reveal">
+        <div class="reason-number">02</div>
+        <div class="reason-content">
+          <h3 data-i18n="r2_title">Actually Portable</h3>
+          <p data-i18n="r2_desc">Folds completely flat. Fits in your car trunk, your beach bag, your bike basket. When we say portable, we mean it — not slightly smaller than a regular grill. Actually flat. Actually packable.</p>
+        </div>
+      </div>
+
+      <div class="reason-row reveal">
+        <div class="reason-number">03</div>
+        <div class="reason-content">
+          <h3 data-i18n="r3_title">5-Minute Setup</h3>
+          <p data-i18n="r3_desc">No tools. No instruction manual. No watching tutorial videos at the campsite. Unfold, lock, load coal, light. You'll have it memorized after the first time.</p>
+        </div>
+      </div>
+
+      <!-- Mid-page visual banner -->
+      <div class="reveal" style="margin:32px 0;">
+        <div style="aspect-ratio:21/9;max-height:380px;border-radius:14px;overflow:hidden;position:relative;border:1px solid rgba(227,32,21,0.12);">
+          <img
+            src="https://images.unsplash.com/photo-1558030006-450675393462?w=1400&q=75&auto=format&fit=crop"
+            alt="BlazePit portable grill in action"
+            style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;"
+            loading="lazy"
+          >
+          <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,0.55) 0%,transparent 50%,rgba(0,0,0,0.3) 100%);"></div>
+        </div>
+      </div>
+
+      <div class="reason-row reveal">
+        <div class="reason-number">04</div>
+        <div class="reason-content">
+          <h3 data-i18n="r4_title">Real BBQ Heat</h3>
+          <p data-i18n="r4_desc">Charcoal power means real sear marks, real smoke, real flavor. No gas shortcuts. No electric gimmicks. Just charcoal — the way BBQ was meant to be done.</p>
+        </div>
+      </div>
+
+      <div class="reason-row reveal">
+        <div class="reason-number">05</div>
+        <div class="reason-content">
+          <h3 data-i18n="r5_title">Built to Last</h3>
+          <p data-i18n="r5_desc">Premium steel construction. Not a toy grill. Not a single-use disposable. A grill you'll bring on every trip, season after season — and it'll still look good doing it.</p>
+        </div>
+      </div>
+
+      <div class="reason-row reveal">
+        <div class="reason-number">06</div>
+        <div class="reason-content">
+          <h3 data-i18n="r6_title">No Fuss, No Mess</h3>
+          <p data-i18n="r6_desc">The coal tray lifts out cleanly for easy ash disposal. No scrubbing the ground, no making a mess. Easy to empty, easy to clean, easy to store.</p>
+        </div>
+      </div>
+
+      <div class="reason-row reveal">
+        <div class="reason-number">07</div>
+        <div class="reason-content">
+          <h3 data-i18n="r7_title">Cook for a Crowd</h3>
+          <p data-i18n="r7_desc">Enough grate space to feed your whole squad — not just one steak. Whether it's a solo beach day or a group trip with 10 people, BlazePit handles it.</p>
+        </div>
+      </div>
+
+      <div class="reason-row reveal">
+        <div class="reason-number">08</div>
+        <div class="reason-content">
+          <h3 data-i18n="r8_title">Looks the Part</h3>
+          <p data-i18n="r8_desc">Sleek. Dark. The kind of gear that gets questions at the campsite. BlazePit looks as premium as it performs — because the people who own it care about both.</p>
+        </div>
+      </div>
+
+      <div class="reason-row reveal">
+        <div class="reason-number">09</div>
+        <div class="reason-content">
+          <h3 data-i18n="r9_title">Affordable Without Compromise</h3>
+          <p data-i18n="r9_desc">Premium grill experience without the premium price tag. We believe good BBQ gear shouldn't cost a fortune — it should just work, look good, and last.</p>
+        </div>
+      </div>
+
+      <div class="reason-row reveal">
+        <div class="reason-number">10</div>
+        <div class="reason-content">
+          <h3 data-i18n="r10_title">Adventure is the Point</h3>
+          <p data-i18n="r10_desc">BlazePit isn't for your backyard. It's for everywhere else. The North Coast. The Sinai. The rooftop. The road. If you go somewhere, it goes with you.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COMPARISON TABLE -->
+  <section class="section comparison-section">
+    <div class="container">
+      <div class="section-heading text-center reveal">
+        <span class="label" data-i18n="compare_label">Head to Head</span>
+        <h2 data-i18n="compare_title">HOW WE STACK UP</h2>
+      </div>
+      <div style="overflow-x:auto;margin-top:40px;" class="reveal">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th data-i18n="compare_th0">Feature</th>
+              <th data-i18n="compare_th1">BlazePit</th>
+              <th data-i18n="compare_th2">Standard Grill</th>
+              <th data-i18n="compare_th3">Disposable Grill</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-i18n="cmp_r1">Portable</td>
+              <td data-i18n="cmp_r1c1">✓ Flat-pack — fits anywhere</td>
+              <td data-i18n="cmp_r1c2">✗ Heavy &amp; bulky</td>
+              <td data-i18n="cmp_r1c3">Single-use only</td>
+            </tr>
+            <tr>
+              <td data-i18n="cmp_r2">Setup Time</td>
+              <td data-i18n="cmp_r2c1">5 minutes</td>
+              <td data-i18n="cmp_r2c2">20+ minutes</td>
+              <td data-i18n="cmp_r2c3">5 minutes</td>
+            </tr>
+            <tr>
+              <td data-i18n="cmp_r3">Reusable</td>
+              <td data-i18n="cmp_r3c1">✓ Season after season</td>
+              <td data-i18n="cmp_r3c2">✓ Yes</td>
+              <td data-i18n="cmp_r3c3">✗ One trip only</td>
+            </tr>
+            <tr>
+              <td data-i18n="cmp_r4">BBQ Quality</td>
+              <td data-i18n="cmp_r4c1">Full charcoal heat</td>
+              <td data-i18n="cmp_r4c2">Full heat</td>
+              <td data-i18n="cmp_r4c3">Limited</td>
+            </tr>
+            <tr>
+              <td data-i18n="cmp_r5">Packability</td>
+              <td data-i18n="cmp_r5c1">✓ Fits in a bag</td>
+              <td data-i18n="cmp_r5c2">✗ Needs a truck</td>
+              <td data-i18n="cmp_r5c3">Light but fragile</td>
+            </tr>
+            <tr>
+              <td data-i18n="cmp_r6">Build Quality</td>
+              <td data-i18n="cmp_r6c1">Premium steel</td>
+              <td data-i18n="cmp_r6c2">Varies</td>
+              <td data-i18n="cmp_r6c3">Thin foil tray</td>
+            </tr>
+            <tr>
+              <td data-i18n="cmp_r7">Price</td>
+              <td data-i18n="cmp_r7c1">Mid — great value</td>
+              <td data-i18n="cmp_r7c2">High</td>
+              <td data-i18n="cmp_r7c3">Low (adds up)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="background:var(--bg-alt);">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <span class="label" style="display:block;margin-bottom:14px;" data-i18n="why_cta_label">Enough Reasons?</span>
+        <h2 data-i18n="why_cta_title">GET YOUR BLAZEPIT</h2>
+        <p data-i18n="why_cta_sub">Stop settling for bulky grills or throwaway foil trays. Get the grill that actually travels with you.</p>
+        <a href="shop.html" class="btn btn-primary" style="font-size:16px;padding:16px 36px;" data-i18n="why_cta_btn">Get Your BlazePit →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer__top">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__col">
+            <img src="assets/logo-dark.png" alt="BlazePit" class="footer-logo footer-logo--dark"><img src="assets/logo-light.png" alt="BlazePit" class="footer-logo footer-logo--light">
+            <p class="footer__tagline" data-i18n="footer_tagline">The grill built for people who don't stay in one place.</p>
+            <div class="footer__social">
+              <a href="https://www.instagram.com/blazepit.co/?hl=en" aria-label="Instagram" target="_blank" rel="noopener">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="#" aria-label="TikTok">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.25 8.25 0 0 0 4.83 1.55V6.79a4.85 4.85 0 0 1-1.06-.1z"/></svg>
+              </a>
+              <a href="#" aria-label="Facebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer__col">
+            <h4 data-i18n="footer_shop_head">Shop</h4>
+            <ul>
+              <li><a href="shop.html" data-i18n="footer_grill">Grill</a></li>
+              <li><a href="how-it-works.html" data-i18n="nav_how">How It Works</a></li>
+              <li><a href="why-blazepit.html" data-i18n="nav_why">Why BlazePit</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4 data-i18n="footer_company_head">Company</h4>
+            <ul>
+              <li><a href="about.html" data-i18n="footer_about">About</a></li>
+              <li><a href="contact.html" data-i18n="footer_contact">Contact</a></li>
+              <li><a href="#" data-i18n="footer_privacy">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4 data-i18n="footer_tribe_head">Join the Tribe</h4>
+            <p data-i18n="footer_tribe_sub">Be first to know when we launch.</p>
+            <form class="email-form" onsubmit="return false;">
+              <input type="email" data-i18n="email_placeholder" placeholder="Your email address" autocomplete="email">
+              <button type="submit" class="btn btn-primary" data-i18n="email_cta">Join</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <span data-i18n="footer_copyright">© 2026 BlazePit. All rights reserved.</span>
+        <div class="footer__bottom-controls">
+          <div class="lang-switcher">
+            <button class="lang-btn">
+              <span class="globe-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+              <span class="lang-current">EN</span>
+            </button>
+            <div class="lang-dropdown">
+              <button class="lang-option" data-lang="en">English</button>
+              <button class="lang-option" data-lang="ar">العربية</button>
+              <button class="lang-option" data-lang="es">Español</button>
+            </div>
+          </div>
+          <button class="theme-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/tilt.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+

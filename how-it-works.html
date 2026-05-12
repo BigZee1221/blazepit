@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlazePit — How It Works</title>
+  <meta name="description" content="Setup to sear in 5 minutes. No tools, no instructions — see exactly how BlazePit works.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&family=Stardos+Stencil:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/dark-light.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="main-nav">
+    <div class="nav__inner">
+      <a href="index.html" class="site-logo"><img src="assets/logo-dark.png" alt="BlazePit" class="nav-logo nav-logo--dark"><img src="assets/logo-light.png" alt="BlazePit" class="nav-logo nav-logo--light"></a>
+      <nav class="nav__links">
+        <a href="index.html"        class="nav__link" data-i18n="nav_home">Home</a>
+        <a href="how-it-works.html" class="nav__link active" data-i18n="nav_how">How It Works</a>
+        <a href="why-blazepit.html" class="nav__link" data-i18n="nav_why">Why BlazePit</a>
+        <a href="about.html"        class="nav__link" data-i18n="nav_about">About</a>
+        <a href="shop.html"         class="nav__link" data-i18n="nav_shop">Shop</a>
+      </nav>
+      <div class="nav__right">
+        <div class="lang-switcher">
+          <button class="lang-btn" aria-label="Language">
+            <span class="globe-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+            <span class="lang-current">EN</span>
+          </button>
+          <div class="lang-dropdown">
+            <button class="lang-option" data-lang="en">English</button>
+            <button class="lang-option" data-lang="ar">العربية</button>
+            <button class="lang-option" data-lang="es">Español</button>
+          </div>
+        </div>
+        <button class="theme-btn" aria-label="Toggle theme">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+        <a href="shop.html" class="btn btn-primary nav__cta" data-i18n="buy_now">Buy Now</a>
+      </div>
+      <button class="nav__hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile-overlay">
+    <a href="index.html"        class="nav__mobile-link" data-i18n="nav_home">Home</a>
+    <a href="how-it-works.html" class="nav__mobile-link" data-i18n="nav_how">How It Works</a>
+    <a href="why-blazepit.html" class="nav__mobile-link" data-i18n="nav_why">Why BlazePit</a>
+    <a href="about.html"        class="nav__mobile-link" data-i18n="nav_about">About</a>
+    <a href="shop.html"         class="nav__mobile-link" data-i18n="nav_shop">Shop</a>
+    <a href="contact.html"      class="nav__mobile-link" data-i18n="nav_contact">Contact</a>
+    <div class="nav__mobile-controls">
+      <div class="lang-switcher">
+        <button class="lang-btn">
+          <span class="globe-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+          <span class="lang-current">EN</span>
+        </button>
+        <div class="lang-dropdown">
+          <button class="lang-option" data-lang="en">English</button>
+          <button class="lang-option" data-lang="ar">العربية</button>
+          <button class="lang-option" data-lang="es">Español</button>
+        </div>
+      </div>
+      <button class="theme-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+    </div>
+  </div>
+
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="page-hero__content">
+      <span class="label fade-up" data-i18n="hiw_hero_label">Setup Guide</span>
+      <h1 class="hero-text-reveal" data-i18n="hiw_hero_title">SETUP TO SEAR IN 5 MINUTES</h1>
+      <p class="fade-up" data-delay="1" data-i18n="hiw_hero_sub">No tools. No instructions. No excuses.</p>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <div class="trust-strip">
+    <div class="trust-strip__track">
+      <div class="trust-strip__item"><span class="ts-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></span><span data-i18n="trust_1">Flat-Pack Design</span></div>
+      <div class="trust-strip__item"><span class="ts-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9z"/></svg></span><span data-i18n="trust_2">Sets Up in 5 Minutes</span></div>
+      <div class="trust-strip__item"><span class="ts-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg></span><span data-i18n="trust_3">Go Anywhere</span></div>
+      <div class="trust-strip__item"><span class="ts-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span><span data-i18n="trust_4">Built to Last</span></div>
+      <div class="trust-strip__item"><span class="ts-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></span><span data-i18n="trust_1">Flat-Pack Design</span></div>
+      <div class="trust-strip__item"><span class="ts-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9z"/></svg></span><span data-i18n="trust_2">Sets Up in 5 Minutes</span></div>
+      <div class="trust-strip__item"><span class="ts-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg></span><span data-i18n="trust_3">Go Anywhere</span></div>
+      <div class="trust-strip__item"><span class="ts-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span><span data-i18n="trust_4">Built to Last</span></div>
+    </div>
+  </div>
+
+
+  <!-- STEPS -->
+  <section class="section steps-section">
+    <div class="container">
+
+      <!-- Step 1 — UNFOLD -->
+      <div class="step-row slide-in-left">
+        <div class="step-content">
+          <div class="step-number-big">01</div>
+          <span class="label" data-i18n="step_label_1">Step One</span>
+          <h3 data-i18n="step1_title">UNFOLD</h3>
+          <p data-i18n="step1_desc">Open the flat-pack. It clicks into position automatically. Zero tools, zero effort — just unfold and it's ready to stand.</p>
+        </div>
+        <div class="step-visual">
+          <img src="https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?w=1000&q=75&auto=format&fit=crop" alt="Unfolding flat-pack grill" class="step-photo" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Step 2 — PLACE -->
+      <div class="step-row reverse slide-in-right">
+        <div class="step-content">
+          <div class="step-number-big">02</div>
+          <span class="label" data-i18n="step_label_2">Step Two</span>
+          <h3 data-i18n="step2_title">PLACE</h3>
+          <p data-i18n="step2_desc">Set on any stable surface. Ground, table, car hood, a flat rock — wherever you are. It levels itself on most surfaces.</p>
+        </div>
+        <div class="step-visual">
+          <img src="https://images.unsplash.com/photo-1531835551805-16d864c8d311?w=1000&q=75&auto=format&fit=crop" alt="Placing grill on stable surface" class="step-photo" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Step 3 — LOAD COAL -->
+      <div class="step-row slide-in-left">
+        <div class="step-content">
+          <div class="step-number-big">03</div>
+          <span class="label" data-i18n="step_label_3">Step Three</span>
+          <h3 data-i18n="step3_title">LOAD COAL</h3>
+          <p data-i18n="step3_desc">Add charcoal into the coal tray beneath the grate. We recommend hardwood lump charcoal for best heat and flavor. Fill about ¾ of the tray.</p>
+        </div>
+        <div class="step-visual">
+          <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=1000&q=75&auto=format&fit=crop" alt="Loading charcoal into grill tray" class="step-photo" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Step 4 — LIGHT -->
+      <div class="step-row reverse slide-in-right">
+        <div class="step-content">
+          <div class="step-number-big">04</div>
+          <span class="label" data-i18n="step_label_4">Step Four</span>
+          <h3 data-i18n="step4_title">LIGHT</h3>
+          <p data-i18n="step4_desc">Use fire starters or a lighter to ignite the coal. Let it build for 15–20 minutes until the coals are ashed over and glowing white-hot. Then you're ready.</p>
+        </div>
+        <div class="step-visual">
+          <img src="https://images.unsplash.com/photo-1542293787-0c5e1f93da0c?w=1000&q=75&auto=format&fit=crop" alt="Lighting the charcoal" class="step-photo" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Step 5 — GRILL -->
+      <div class="step-row slide-in-left">
+        <div class="step-content">
+          <div class="step-number-big">05</div>
+          <span class="label" data-i18n="step_label_5">Step Five</span>
+          <h3 data-i18n="step5_title">GRILL</h3>
+          <p data-i18n="step5_desc">Full heat. Real sear marks. Real smoke. BBQ anywhere — North Coast, Sinai, your rooftop, a roadside pull-off. The grill that goes where you go.</p>
+        </div>
+        <div class="step-visual">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=1000&q=75&auto=format&fit=crop" alt="Grilling food on BlazePit" class="step-photo" loading="lazy">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- VIDEO PLACEHOLDER -->
+  <section class="section" style="background:var(--bg-card);">
+    <div class="container" style="max-width:800px;">
+      <div class="section-heading text-center reveal">
+        <span class="label" data-i18n="video_label">Watch It</span>
+        <h2 data-i18n="video_title">SEE IT IN ACTION</h2>
+        <p style="margin-top:12px;" data-i18n="video_sub">Watch the 60-second setup — from bag to full blaze.</p>
+      </div>
+      <div class="video-placeholder reveal" style="margin-top:32px;">
+        <div class="play-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        </div>
+        <p data-i18n="video_caption">Watch the 60-Second Setup</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRO TIPS -->
+  <section class="section" style="background:var(--bg-alt);">
+    <div class="container">
+      <div class="section-heading text-center reveal">
+        <span class="label" data-i18n="tips_label">Pro Tips</span>
+        <h2 data-i18n="tips_title">GRILL LIKE A PRO</h2>
+      </div>
+      <div class="grid-3" style="margin-top:40px;">
+        <div class="card reveal" data-delay="1">
+          <div class="card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 9V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2m2 4h10a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2z"/></svg>
+          </div>
+          <h3 data-i18n="tip1_title">Use Hardwood Charcoal</h3>
+          <p data-i18n="tip1_desc">Hardwood lump charcoal burns hotter and cleaner than briquettes. You'll get better sear marks and real smoky flavor.</p>
+        </div>
+        <div class="card reveal" data-delay="2">
+          <div class="card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3 data-i18n="tip2_title">Wait for the Ash</h3>
+          <p data-i18n="tip2_desc">Let coals ash over before grilling — about 15–20 minutes. You want them glowing white-hot, not flaming. That's when the heat is right.</p>
+        </div>
+        <div class="card reveal" data-delay="3">
+          <div class="card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-.18-5.02"/></svg>
+          </div>
+          <h3 data-i18n="tip3_title">Clean While Warm</h3>
+          <p data-i18n="tip3_desc">Wipe the grate with a dry cloth while it's still warm for easiest cleanup. Let the grill cool completely before folding and packing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="section" style="background:var(--bg-card);">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <span class="label" style="display:block;margin-bottom:14px;" data-i18n="hiw_cta_label">Ready?</span>
+        <h2 data-i18n="hiw_cta_title">READY TO GET YOURS?</h2>
+        <p data-i18n="hiw_cta_sub">You've seen how easy it is. Now get the grill that goes wherever you do.</p>
+        <a href="shop.html" class="btn btn-primary" style="font-size:16px;padding:16px 36px;" data-i18n="hiw_cta_btn">Shop Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer__top">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__col">
+            <img src="assets/logo-dark.png" alt="BlazePit" class="footer-logo footer-logo--dark"><img src="assets/logo-light.png" alt="BlazePit" class="footer-logo footer-logo--light">
+            <p class="footer__tagline" data-i18n="footer_tagline">The grill built for people who don't stay in one place.</p>
+            <div class="footer__social">
+              <a href="https://www.instagram.com/blazepit.co/?hl=en" aria-label="Instagram" target="_blank" rel="noopener">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="#" aria-label="TikTok">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.25 8.25 0 0 0 4.83 1.55V6.79a4.85 4.85 0 0 1-1.06-.1z"/></svg>
+              </a>
+              <a href="#" aria-label="Facebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer__col">
+            <h4 data-i18n="footer_shop_head">Shop</h4>
+            <ul>
+              <li><a href="shop.html" data-i18n="footer_grill">Grill</a></li>
+              <li><a href="how-it-works.html" data-i18n="nav_how">How It Works</a></li>
+              <li><a href="why-blazepit.html" data-i18n="nav_why">Why BlazePit</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4 data-i18n="footer_company_head">Company</h4>
+            <ul>
+              <li><a href="about.html" data-i18n="footer_about">About</a></li>
+              <li><a href="contact.html" data-i18n="footer_contact">Contact</a></li>
+              <li><a href="#" data-i18n="footer_privacy">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4 data-i18n="footer_tribe_head">Join the Tribe</h4>
+            <p data-i18n="footer_tribe_sub">Be first to know when we launch.</p>
+            <form class="email-form" onsubmit="return false;">
+              <input type="email" data-i18n="email_placeholder" placeholder="Your email address" autocomplete="email">
+              <button type="submit" class="btn btn-primary" data-i18n="email_cta">Join</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <span data-i18n="footer_copyright">© 2026 BlazePit. All rights reserved.</span>
+        <div class="footer__bottom-controls">
+          <div class="lang-switcher">
+            <button class="lang-btn">
+              <span class="globe-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+              <span class="lang-current">EN</span>
+            </button>
+            <div class="lang-dropdown">
+              <button class="lang-option" data-lang="en">English</button>
+              <button class="lang-option" data-lang="ar">العربية</button>
+              <button class="lang-option" data-lang="es">Español</button>
+            </div>
+          </div>
+          <button class="theme-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/tilt.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
+  <!-- Flame icon -->
+  <path d="M24 8 C24 8 20 14 22 20 C22 20 18 17 19 12 C19 12 14 18 16 26 C16 26 12 23 13 18 C13 18 8 24 10 34 C10 34 8 32 8 28 C8 28 4 36 8 44 C12 52 20 56 28 54 C36 52 40 44 38 36 C36 28 30 26 30 26 C32 30 28 36 24 36 C20 36 18 30 20 26 C20 26 18 30 18 28 C18 26 20 20 24 8Z" fill="#FF6B35"/>
+  <path d="M24 20 C24 20 22 24 23 28 C23 28 21 26 22 23 C22 23 20 26 21 30 C22 34 25 36 27 34 C29 32 29 28 27 26 C27 26 28 28 27 30 C26 32 24 32 24 30 C24 28 25 24 24 20Z" fill="#C0392B" opacity="0.8"/>
+  <!-- BLAZE text -->
+  <text x="48" y="42" font-family="Montserrat, Arial, sans-serif" font-weight="900" font-size="26" fill="#FFFFFF" letter-spacing="1">BLAZE</text>
+  <!-- PIT text -->
+  <text x="135" y="42" font-family="Montserrat, Arial, sans-serif" font-weight="900" font-size="26" fill="#FF6B35" letter-spacing="1">PIT</text>
+</svg>

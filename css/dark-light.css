@@ -1,0 +1,124 @@
+﻿/* ================================================================
+   BLAZE PIT — LIGHT MODE
+   Pure white (#fff) background, pure black (#000) text
+   ================================================================ */
+
+body.light-mode {
+  --bg:         #ffffff;
+  --bg-alt:     #f5f5f5;
+  --bg-card:    #ebebeb;
+  --text:       rgba(0,0,0,0.78);
+  --text-head:  #000000;
+  --text-muted: rgba(0,0,0,0.45);
+  --border:     rgba(0,0,0,0.08);
+}
+
+/* Nav */
+body.light-mode .nav.scrolled {
+  background: rgba(255,255,255,0.96);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.08);
+}
+body.light-mode .nav__link      { color: rgba(0,0,0,0.6); }
+body.light-mode .nav__link:hover,
+body.light-mode .nav__link.active { color: #000; }
+body.light-mode .nav__hamburger span { background: #000; }
+body.light-mode .nav__mobile-overlay { background: rgba(255,255,255,0.98); }
+body.light-mode .nav__mobile-link { color: #000; }
+
+/* Language switcher */
+body.light-mode .lang-btn { color: rgba(0,0,0,0.6); }
+body.light-mode .lang-btn:hover { color: #000; background: rgba(0,0,0,0.06); }
+body.light-mode .lang-dropdown { background: rgba(255,255,255,0.98); border-color: rgba(0,0,0,0.1); box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
+body.light-mode .lang-option { color: rgba(0,0,0,0.7); }
+
+/* Theme btn */
+body.light-mode .theme-btn { background: rgba(0,0,0,0.06); color: rgba(0,0,0,0.65); }
+body.light-mode .theme-btn:hover { color: #000; }
+
+/* Outline button — must have visible dark border in light mode */
+body.light-mode .btn-outline {
+  color: #000;
+  border-color: rgba(0,0,0,0.45);
+}
+body.light-mode .btn-outline:hover {
+  border-color: #000;
+  background: rgba(0,0,0,0.05);
+}
+
+/* Hardcoded white text overrides */
+body.light-mode .hero__sub      { color: rgba(0,0,0,0.65); }
+body.light-mode .shop-content p { color: rgba(0,0,0,0.65); }
+
+/* Trust strip */
+body.light-mode .trust-strip { background: #ebebeb; }
+body.light-mode .trust-strip__item { color: rgba(0,0,0,0.7); }
+
+/* Cards */
+body.light-mode .card { background: #fff; border-color: rgba(0,0,0,0.08); box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
+body.light-mode .card .card-icon { background: rgba(227,32,21,0.08); }
+
+/* Why rows */
+body.light-mode .why-row { border-bottom-color: rgba(0,0,0,0.07); }
+body.light-mode .why-icon { background: rgba(227,32,21,0.08); }
+
+/* Email form */
+body.light-mode .email-form input { background: rgba(0,0,0,0.04); border-color: rgba(0,0,0,0.12); color: #000; }
+body.light-mode .email-form input::placeholder { color: rgba(0,0,0,0.38); }
+
+/* Contact form */
+body.light-mode .form-field input,
+body.light-mode .form-field select,
+body.light-mode .form-field textarea { background: rgba(0,0,0,0.04); border-color: rgba(0,0,0,0.12); color: #000; }
+body.light-mode .form-field select option { background: #fff; color: #000; }
+
+/* CTA banner */
+body.light-mode .cta-banner { background: #fff; border-color: rgba(227,32,21,0.15); }
+
+/* Visuals */
+body.light-mode .product-visual { background: radial-gradient(ellipse at 50% 72%, rgba(227,32,21,0.1) 0%, #f0e8e8 48%, #f5f5f5 100%); }
+body.light-mode .loc-coast   { background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=70&auto=format&fit=crop') center/cover no-repeat, #b0d4ec; filter: brightness(0.9); }
+body.light-mode .loc-sinai   { background: url('https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?w=1200&q=70&auto=format&fit=crop') center/cover no-repeat, #e8d4b0; filter: brightness(0.9); }
+body.light-mode .loc-rooftop { background: url('https://images.unsplash.com/photo-1514565131-fce0801e5785?w=1200&q=70&auto=format&fit=crop') center/cover no-repeat, #c8c8d4; filter: brightness(0.9); }
+body.light-mode .loc-desert  { background: url('https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1200&q=70&auto=format&fit=crop') center/cover no-repeat, #e0d0a8; filter: brightness(0.9); }
+body.light-mode .loc-night   { background: url('https://images.unsplash.com/photo-1517824806704-9040b037703b?w=1200&q=70&auto=format&fit=crop') center/cover no-repeat, #e8c0b8; filter: brightness(0.9); }
+body.light-mode .loc-sunset  { background: url('https://images.unsplash.com/photo-1502790671504-542ad42d5189?w=1200&q=70&auto=format&fit=crop') center/cover no-repeat, #edd0c0; filter: brightness(0.9); }
+
+body.light-mode .step-visual { background: #f0f0f0; }
+body.light-mode .video-placeholder { background: #ebebeb; }
+
+/* Comparison table */
+body.light-mode .comparison-table td { color: rgba(0,0,0,0.75); border-bottom-color: rgba(0,0,0,0.07); }
+body.light-mode .comparison-table tr:hover td { background: rgba(227,32,21,0.04); }
+body.light-mode .comparison-table td:first-child { color: #000; }
+
+/* Pull quote */
+body.light-mode .pull-quote { color: #000; }
+
+/* Press quotes */
+body.light-mode .press-section { background: #ebebeb; }
+body.light-mode .quote-item { color: rgba(0,0,0,0.6); }
+
+/* Step numbers */
+body.light-mode .step-number-big { -webkit-text-stroke-color: rgba(227,32,21,0.45); }
+body.light-mode .reason-number   { -webkit-text-stroke-color: rgba(227,32,21,0.38); }
+
+/* Footer */
+body.light-mode footer            { background: #ebebeb; border-top-color: rgba(0,0,0,0.07); }
+body.light-mode .footer__bottom   { border-top-color: rgba(0,0,0,0.07); }
+body.light-mode .footer__col ul a { color: rgba(0,0,0,0.5); }
+body.light-mode .footer__col ul a:hover { color: #000; }
+body.light-mode .footer__tagline  { color: rgba(0,0,0,0.45); }
+body.light-mode .footer__col > p  { color: rgba(0,0,0,0.45); }
+body.light-mode .footer__bottom span { color: rgba(0,0,0,0.38); }
+body.light-mode .footer__social a { background: rgba(0,0,0,0.05); border-color: rgba(0,0,0,0.08); color: rgba(0,0,0,0.5); }
+
+/* Social section */
+body.light-mode .social-btn { background: rgba(0,0,0,0.05); border-color: rgba(0,0,0,0.1); color: rgba(0,0,0,0.55); }
+
+/* Shop page */
+body.light-mode .shop-coming-soon { background: #ffffff; }
+body.light-mode .countdown-num { color: #000; }
+
+/* Grill SVG lines in light mode */
+body.light-mode .grill-svg [stroke^="rgba(255"] { stroke: rgba(0,0,0,0.15) !important; }
+body.light-mode .grill-svg [stroke^="rgba(255,255,255,0.2"] { stroke: rgba(0,0,0,0.12) !important; }

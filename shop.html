@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlazePit — Shop (Coming Soon)</title>
+  <meta name="description" content="BlazePit shop is coming soon. Join the waitlist and be first to know.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&family=Stardos+Stencil:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/dark-light.css">
+  <style>
+    body { overflow: hidden; }
+    @media (max-width: 600px) { body { overflow: auto; } }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav scrolled" id="main-nav">
+    <div class="nav__inner">
+      <a href="index.html" class="site-logo"><img src="assets/logo-dark.png" alt="BlazePit" class="nav-logo nav-logo--dark"><img src="assets/logo-light.png" alt="BlazePit" class="nav-logo nav-logo--light"></a>
+      <nav class="nav__links">
+        <a href="index.html"        class="nav__link" data-i18n="nav_home">Home</a>
+        <a href="how-it-works.html" class="nav__link" data-i18n="nav_how">How It Works</a>
+        <a href="why-blazepit.html" class="nav__link" data-i18n="nav_why">Why BlazePit</a>
+        <a href="about.html"        class="nav__link" data-i18n="nav_about">About</a>
+        <a href="shop.html"         class="nav__link active" data-i18n="nav_shop">Shop</a>
+      </nav>
+      <div class="nav__right">
+        <div class="lang-switcher">
+          <button class="lang-btn" aria-label="Language">
+            <span class="globe-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+            <span class="lang-current">EN</span>
+          </button>
+          <div class="lang-dropdown">
+            <button class="lang-option" data-lang="en">English</button>
+            <button class="lang-option" data-lang="ar">العربية</button>
+            <button class="lang-option" data-lang="es">Español</button>
+          </div>
+        </div>
+        <button class="theme-btn" aria-label="Toggle theme">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+      <button class="nav__hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile-overlay">
+    <a href="index.html"        class="nav__mobile-link" data-i18n="nav_home">Home</a>
+    <a href="how-it-works.html" class="nav__mobile-link" data-i18n="nav_how">How It Works</a>
+    <a href="why-blazepit.html" class="nav__mobile-link" data-i18n="nav_why">Why BlazePit</a>
+    <a href="about.html"        class="nav__mobile-link" data-i18n="nav_about">About</a>
+    <a href="shop.html"         class="nav__mobile-link" data-i18n="nav_shop">Shop</a>
+    <a href="contact.html"      class="nav__mobile-link" data-i18n="nav_contact">Contact</a>
+    <div class="nav__mobile-controls">
+      <div class="lang-switcher">
+        <button class="lang-btn">
+          <span class="globe-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+          <span class="lang-current">EN</span>
+        </button>
+        <div class="lang-dropdown">
+          <button class="lang-option" data-lang="en">English</button>
+          <button class="lang-option" data-lang="ar">العربية</button>
+          <button class="lang-option" data-lang="es">Español</button>
+        </div>
+      </div>
+      <button class="theme-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- COMING SOON -->
+  <section class="shop-coming-soon">
+    <canvas id="shop-particles" class="particles-canvas"></canvas>
+
+    <div class="shop-content">
+      <img src="assets/logo-dark.png" alt="BlazePit" class="shop-logo-img shop-logo-img--dark"><img src="assets/logo-light.png" alt="BlazePit" class="shop-logo-img shop-logo-img--light">
+
+      <div class="lock-icon">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      </div>
+
+      <h1 class="hero-text-reveal" data-i18n="shop_headline">SOMETHING'S ALMOST READY.</h1>
+
+      <p data-i18n="shop_sub">The grill is coming. Be the first to know when it drops.</p>
+
+      <!-- Countdown -->
+      <div class="countdown-timer" id="countdown">
+        <div class="countdown-unit">
+          <div class="countdown-num" id="cd-days">00</div>
+          <div class="countdown-label" data-i18n="cd_days">Days</div>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-unit">
+          <div class="countdown-num" id="cd-hrs">00</div>
+          <div class="countdown-label" data-i18n="cd_hours">Hours</div>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-unit">
+          <div class="countdown-num" id="cd-mins">00</div>
+          <div class="countdown-label" data-i18n="cd_mins">Mins</div>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-unit">
+          <div class="countdown-num" id="cd-secs">00</div>
+          <div class="countdown-label" data-i18n="cd_secs">Secs</div>
+        </div>
+      </div>
+
+      <!-- Email form -->
+      <form class="email-form" onsubmit="return false;" style="width:100%;max-width:440px;">
+        <input type="email" data-i18n="email_placeholder" placeholder="Your email address" required autocomplete="email">
+        <button type="submit" class="btn btn-primary" data-i18n="notify_me">Notify Me</button>
+      </form>
+
+      <p class="shop-counter" data-i18n="shop_counter">Join <strong>847</strong> people already waiting.</p>
+
+      <!-- Social links -->
+      <div class="social-icons-row">
+        <a href="https://www.instagram.com/blazepit.co/?hl=en" class="social-btn" aria-label="Instagram" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="#" class="social-btn" aria-label="TikTok">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.25 8.25 0 0 0 4.83 1.55V6.79a4.85 4.85 0 0 1-1.06-.1z"/></svg>
+        </a>
+        <a href="#" class="social-btn" aria-label="Facebook">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+      </div>
+
+      <a href="index.html" class="link-cta" style="margin-top:8px;" data-i18n="shop_back">← Back to Home</a>
+    </div>
+  </section>
+
+  <script src="js/translations.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/tilt.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
