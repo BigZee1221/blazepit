@@ -46,8 +46,20 @@ body.light-mode .btn-outline:hover {
 }
 
 /* Hardcoded white text overrides */
-body.light-mode .hero__sub      { color: rgba(0,0,0,0.65); }
 body.light-mode .shop-content p { color: rgba(0,0,0,0.65); }
+
+/* Hero with video background — keep text light over the dark video even in light mode */
+body.light-mode .hero--video h1,
+body.light-mode .hero--video .hero-text-reveal { color: #ffffff; }
+body.light-mode .hero--video .hero__sub        { color: rgba(255,255,255,0.88); }
+body.light-mode .hero--video .hero__trust      { color: rgba(255,255,255,0.7); }
+body.light-mode .hero--video .hero__label      { color: var(--red); }
+body.light-mode .hero--video .si-label         { color: rgba(255,255,255,0.75); }
+body.light-mode .hero--video .btn-outline      { color: #ffffff; border-color: rgba(255,255,255,0.55); }
+body.light-mode .hero--video .btn-outline:hover { border-color: #ffffff; background: rgba(255,255,255,0.1); }
+
+/* Non-video hero (other pages still get the regular light-mode fix) */
+body.light-mode .hero:not(.hero--video) .hero__sub { color: rgba(0,0,0,0.65); }
 
 /* Trust strip */
 body.light-mode .trust-strip { background: #ebebeb; }
