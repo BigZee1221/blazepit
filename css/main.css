@@ -25,7 +25,7 @@
 
   --font:      'Montserrat', sans-serif;
   --font-logo: 'Stardos Stencil', Impact, 'Arial Black', sans-serif;
-  --nav-height: 72px;
+  --nav-height: 112px;
   --radius:     10px;
   --container:  1200px;
 }
@@ -98,9 +98,21 @@ p  { font-size: 15px; font-weight: 400; line-height: 1.8; color: var(--text); }
 /* ---------------------------------------------------------------- Logo ---- */
 .site-logo { display: flex; align-items: center; transition: opacity 0.2s; }
 .site-logo:hover { opacity: 0.82; }
-.nav-logo   { height: 64px; width: auto; display: block; object-fit: contain; }
-.footer-logo { height: 52px; width: auto; display: block; object-fit: contain; margin-bottom: 10px; }
-.shop-logo-img { height: 68px; width: auto; display: block; object-fit: contain; margin: 0 auto 16px; }
+.nav-logo   { height: 102px; width: auto; display: block; object-fit: contain; }
+.footer-logo { height: 88px; width: auto; display: block; object-fit: contain; margin-bottom: 14px; }
+.shop-logo-img { height: 124px; width: auto; display: block; object-fit: contain; margin: 0 auto 20px; }
+
+/* Tablet / mobile — keep logos prominent but a touch smaller */
+@media (max-width: 900px) {
+  :root { --nav-height: 96px; }
+  .nav-logo   { height: 86px; }
+}
+@media (max-width: 600px) {
+  :root { --nav-height: 80px; }
+  .nav-logo   { height: 72px; }
+  .footer-logo { height: 72px; }
+  .shop-logo-img { height: 96px; }
+}
 
 /* Dual-logo dark/light swap */
 .nav-logo--light,
@@ -650,6 +662,14 @@ body.light-mode .shop-logo-img--light { display: block; }
 
 /* ---------------------------------------------------------------- HOME — Instagram CTA ---- */
 .instagram-section { background: var(--bg); text-align: center; padding: clamp(64px,8vw,100px) 0; }
+.instagram-section .label,
+.social-section    .label {
+  display: block;
+  font-size: 15px;
+  letter-spacing: 0.22em;
+  margin: 0 auto 22px;
+  text-align: center;
+}
 .instagram-cta {
   font-size: clamp(28px,5.5vw,68px);
   font-weight: 900;
